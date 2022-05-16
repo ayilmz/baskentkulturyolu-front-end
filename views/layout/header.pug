@@ -1,0 +1,44 @@
+div.container-fluid
+    div.header.d-flex.align-items-center.flex-wrap.justify-content-between
+        div.text-left.header-logos
+            a(href="#")
+                img.img(src=prefix + "/images/kultur-turizm-bakanligi.png", width='147', height='96')
+            a(href="#")
+                img.img(src=prefix + "/images/baskent-kultur-yolu.svg", width='107', height='66')
+        ul.nav.d-flex.align-items-center
+            li.d-none.d-md-flex
+                a(href='events.html') Etkinlikler
+            li.d-none.d-md-flex
+                a(href='#') Mekanlar
+            li.d-none.d-md-flex
+                a(href='#') Haberler
+            li
+                div.header-search-area
+                    div.header-search-area-close.d-none
+                        em.icon.icon-close
+                    em.icon.icon-search.header-search-area-search
+                    form.d-flex.align-items-center.flex-wrap
+                        input(
+                            type='text'
+                            class='header-search-bar'
+                            placeholder="Etkinlik Ara"
+                        )
+                        input#searchBtn(type="submit", value="Ara")
+            li.language-container.d-none.d-md-flex
+                p.language-selected.d-flex.align-items-center
+                    span TR
+                    em.icon.icon-select-down
+                div.language-list.d-none
+                    div.language-arrow
+                    p.passive TR
+                    hr
+                    p
+                        a(href="#") EN
+
+            li.d-none.d-md-flex
+                a(href="#header-menu", class="header-desktop-menu fancy-box-item-header")
+                    em.icon.icon-hamburger-menu
+                include header-menu
+
+    div.container-fluid.search-open.d-none
+    include header-search-area-categories

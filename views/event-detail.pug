@@ -1,0 +1,119 @@
+extends layout/layout
+
+block content
+    div.container-header.event-page.d-none.d-md-block
+        include layout/header
+    div.main.container-fluid.no-gutters.p-0.next-page-with-map
+        div.row.no-gutters
+            div.col-lg-7.d-none.d-md-block
+                div#google-map
+            div.col-lg-5.place-and-event-detail-container
+                div.col-12.place-navigation.justify-content-between.d-flex.content-scroll-header
+                    a(href="#", title="Sergilere Dön")
+                        em.icon.icon-prev
+                        span Sergilere Dön
+                    div
+                        a(href="#", title="Paylaş")
+                            em.icon.icon-share
+                        button.add-favorite
+                            em.icon.icon-favorite
+                div.col-12.place-and-event-detail.content-scroll
+                    div.col-12.event-image
+                        div.event-icon.d-flex.align-content-center.flex-wrap.justify-content-center
+                            em.icon.icon-theatre
+                        img.img(src=prefix + "/images/event-detail-masalci-dede.png", width="240", height="337")
+
+
+                    div.col-12.event-detail-title
+                        p Dünya Çocukları Sergisi
+
+                    div.col-12
+                        div.col-12.place-link
+                            a(href="", class="d-flex justify-content-between align-content-center flex-wrap")
+                                p
+                                    span ODTÜ Kültür ve Kongre Merkezi
+                                    span Çankaya / Ankara
+                                em.icon.icon-next
+
+                    div.col-12.place-detail-contact.d-md-flex.justify-md-content-between
+                        div.col-12.place-detail-contact-ticket.text-center
+                            a(href="#")
+                                em.icon.icon-ticket
+                                span Bileti Satın Al
+                    div.col-12.place-detail-contact.d-md-flex.justify-md-content-between
+                        div.col-12.col-md-6.place-detail-contact-calendar.text-center.mb-3.mb-md-0
+                            a(href="#") Takvime Ekle
+                        div.col-12.col-md-6.place-detail-contact-calendar.text-center.mb-3.mb-md-0
+                            a(href="#") Yol Tarifi
+
+                    div.col-12.place-organization
+                        p Düzenleyen
+                        div.col-12.text-center
+                            img.img(src=prefix + "/images/organization-logo.png", width="245", height="72")
+                            p Colloquially, the term "artificial intelligence" is often used to describe machines
+
+                    div.col-12.event-dates-container
+                        p Tarihler
+                        ul
+                            li.disabled
+                                a(href="#", class="d-flex justify-content-between align-content-center")
+                                    div.d-flex.justify-content-between
+                                        p.day-number 22
+                                        p.month-time
+                                            span.d-inline-block Şubat
+                                            span.d-inline-block.text-black-50 Cuma
+                                            span.hour.d-block 14:30 - 16:30
+                                    p.free.d-flex.align-content-center.flex-wrap Ücretli
+                            li.active
+                                a(href="#", class="d-flex justify-content-between align-content-center")
+                                    div.d-flex.justify-content-between
+                                        p.day-number 22
+                                        p.month-time
+                                            span.d-inline-block Şubat
+                                            span.d-inline-block.text-black-50 Cuma
+                                            span.hour.d-block 14:30 - 16:30
+                                    p.free.d-flex.align-content-center.flex-wrap Ücretli
+                            li.active
+                                a(href="#", class="d-flex justify-content-between align-content-center")
+                                    div.d-flex.justify-content-between
+                                        p.day-number 22
+                                        p.month-time
+                                            span.d-inline-block Şubat
+                                            span.d-inline-block.text-black-50 Cuma
+                                            span.hour.d-block 14:30 - 16:30
+                                    p.free.d-flex.align-content-center.flex-wrap Ücretli
+
+                    div.col-12
+                        a(href="#")
+                            div.all-calendar.text-center
+                                p Tüm Takvimi Görüntüle (102)
+
+                    div.col-12.event-about.d-flex.align-content-center.flex-wrap.justify-content-between
+                        p.d-flex.align-content-center.flex-wrap Etkinlik Hakkında
+                        div.text-center
+                            em.icon.icon-people
+
+                    div.col-12.event-notification
+                        p.d-flex.align-content-center.flex-wrap
+                            em.icon.icon-information
+                            span.d-flex.align-content-center.flex-wrap 3 yaşından küçük çocuklar etkinliğe kabul edilmemektedir.
+
+
+                    div.col-12.place-labels
+                        p Etiketler
+                        a(href="#", title="Sergi") Sergi
+                        a(href="#", title="Çocuk") Çocuk
+
+                    div.col-12.event-gallery
+                        ul
+                            li
+                                img.img(src=prefix + "/images/gallery-item.png", width="147", height="110")
+                            li
+                                img.img(src=prefix + "/images/gallery-item.png", width="147", height="110")
+                            li
+                                img.img(src=prefix + "/images/gallery-item.png", width="147", height="110")
+                        p Artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals. Leading AI textbooks define the field as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals.[3] Colloquially, the term "artificial intelligence" is often used to describe machines (or computers) that mimic "cognitive" functions that humans associate with the human mind, such as "learning" and "problem solving".
+
+
+                    include layout/footer
+    div.container-fluid.search-open.d-none

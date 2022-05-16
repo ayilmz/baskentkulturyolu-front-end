@@ -1,0 +1,62 @@
+extends layout/layout
+
+block content
+    div.container-header.event-page.d-none.d-md-block
+        include layout/header
+    div.main.container-fluid.no-gutters.p-0.next-page-with-map
+        div.row.no-gutters
+            div.col-lg-7.d-none.d-md-block
+                div#google-map
+            div.col-lg-5.place-and-event-detail-container
+                div.col-12.place-navigation.justify-content-between.d-flex.content-scroll-header
+                    a(href="#", title="Detaylara Dön")
+                        em.icon.icon-prev
+                        span Detaylara Dön
+
+                div.col-12.place-and-event-detail.content-scroll
+                    div.col-12.event-dates-container
+                        p Tarihler
+                        ul
+                            li.disabled
+                                a(href="#", class="d-flex justify-content-between align-content-center")
+                                    div.d-flex.justify-content-between
+                                        p.day-number 22
+                                        p.month-time
+                                            span.d-inline-block Şubat
+                                            span.d-inline-block.text-black-50 Cuma
+                                            span.hour.d-block 14:30 - 16:30
+                                    p.free.d-flex.align-content-center.flex-wrap Ücretli
+                            li
+                                a(href="#", class="d-flex justify-content-between align-content-center")
+                                    div.d-flex.justify-content-between
+                                        p.day-number 22
+                                        p.month-time
+                                            span.d-inline-block Şubat
+                                            span.d-inline-block.text-black-50 Cuma
+                                            span.hour.d-block 14:30 - 16:30
+                                    p.free.d-flex.align-content-center.flex-wrap Ücretli
+
+
+                            li
+                                a(href="#", class="d-flex justify-content-between align-content-center")
+                                    div.d-flex.justify-content-between
+                                        p.day-number 22
+                                        p.month-time
+                                            span.d-inline-block Şubat
+                                            span.d-inline-block.text-black-50 Cuma
+                                            span.hour.d-block 14:30 - 16:30
+                                    p.free.d-flex.align-content-center.flex-wrap Ücretli
+
+
+                            li
+                                a(href="#", class="d-flex justify-content-between align-content-center")
+                                    div.d-flex.justify-content-between
+                                        p.day-number 22
+                                        p.month-time
+                                            span.d-inline-block Şubat
+                                            span.d-inline-block.text-black-50 Cuma
+                                            span.hour.d-block 14:30 - 16:30
+                                    p.free.d-flex.align-content-center.flex-wrap Ücretli
+
+
+                    include layout/footer

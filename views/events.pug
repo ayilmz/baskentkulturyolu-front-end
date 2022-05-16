@@ -1,0 +1,136 @@
+extends layout/layout
+
+block content
+    div.container-header.event-page.d-none.d-md-block
+        include layout/header
+    div.main.container-fluid.no-gutters.p-0.next-page-with-map
+        div.row.no-gutters
+            div.col-lg-7
+                div#google-map
+            div.col-lg-5.event-list-container.place-and-event-detail-container
+                div.col-12.event-filters.content-scroll-header
+                    div.d-flex
+                        div.event-filter-select-container
+                            ul.default-option.active
+                                li
+                                    div.option
+                                        p Tiyatro
+                                        em.icon.icon-select-down
+                            ul.select-ul.d-none
+                                li.border-m.d-flex.justify-content-center.d-md-none
+                                    button
+                                li
+                                    div.option
+                                        div.option-item
+                                            label(for="konser")
+                                                span.item Konser
+                                                input(type="checkbox", id="konser", name="konser" value="Konser")
+                                                span.checkmark
+                                                    em.icon.icon-check
+                                li
+                                    div.option
+                                        div.option-item
+                                            label(for="siname")
+                                                span.item Sinema
+                                                input(type="checkbox", id="siname", name="siname" value="Siname")
+                                                span.checkmark
+                                                    em.icon.icon-check
+                                li
+                                    div.option
+                                        div.option-item
+                                            label(for="sergi")
+                                                span.item Sergi
+                                                input(type="checkbox", id="sergi", name="sergi" value="Sergi")
+                                                span.checkmark
+                                                    em.icon.icon-check
+                                li.event-filter-apply-container
+                                    button Uygula
+
+
+                        div.event-filter-select-container
+                            ul.default-option
+                                li
+                                    div.option
+                                        p Tüm Zamanlar
+                                        em.icon.icon-select-down
+                            ul.select-ul.d-none
+                                li.border-m.d-flex.justify-content-center.d-md-none
+                                    button
+                                li
+                                    div.option
+                                        button.option-item Gelecek Hafta
+                                li
+                                    div.option
+                                        button.option-item İleri Tarihler
+                                li
+                                    div.option
+                                        p.option-item Spesifik Tarih
+                                    div.d-flex.justify-content-sm-start
+                                        a(href="#event-filter-datapicker", class="option-item event-filter-datapicker fancy-box-item-timer")
+                                            div
+                                                span.date-title.d-block Başlangıç
+                                                span.date-value.d-block#start-date
+                                            em.icon.icon-select-down
+                                        a(href="#event-filter-datapicker", class="option-item event-filter-datapicker fancy-box-item-timer")
+                                            div
+                                                span.date-title.d-block Bitiş
+                                                span.date-value.d-block#finish-date
+                                            em.icon.icon-select-down
+                                li
+                                    div.option
+                                        button.option-item Geçmiş Etkinlikler
+
+                        div.event-filter-select-container
+                            ul.default-option
+                                li
+                                    div.option
+                                        p Ücret
+                                        em.icon.icon-select-down
+                            ul.select-ul.d-none
+                                li.border-m.d-flex.justify-content-center.d-md-none
+                                    button
+                                li
+                                    div.option
+                                        button.option-item Tümü
+                                li
+                                    div.option
+                                        button.option-item Ücretli Etkinlikler
+                                li
+                                    div.option
+                                        button.option-item Ücretsiz Etkinlikler
+
+                    ul.d-none.temp-menu
+                        li
+                            a(href="").selected Tümü
+                        li
+                            a(href="") Sergi
+                        li
+                            a(href="") Tiyatro
+                        li
+                            a(href="") Sinema
+                        li
+                            a(href="") Sergi
+                div.col-12.d-flex.d-md-none.justify-content-center.mobile-extend-map
+                    button
+                div.col-12.pl-0.pr-0.content-scroll
+                    p.event-count.text-md-left.text-center <b>24</b> Etkinlik mekanı bulundu.
+                    p.event-detail-title 22 Ocak
+                    div.col-12.place-event-list
+                        p.place-event-list-title Etkinlikler
+                            span (2)
+                        div.all-activities-flow
+                            include layout/all-activities-flow
+                    include layout/footer
+        div.d-none
+            div#event-filter-datapicker
+                p.title Zaman Aralığı Seçiniz
+                div.event-filter-datapicker-inputs
+                    div#event-filter-datapicker-inputs-item
+                        p Başlangıç ve Bitiş
+                        input(placeholder="Seçiniz",  id="datepicker", name="datepicker", readonly="readonly")
+
+
+
+
+
+

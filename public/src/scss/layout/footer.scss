@@ -1,0 +1,99 @@
+.footer{
+  background-color: #FAFAFA;
+  padding: 48px 0;
+
+  &-nav{
+    p{
+      font-family: $font-primary;
+      font-weight: 700;
+      font-size: toRem(14);
+      line-height: 23px;
+      letter-spacing: -0.01em;
+      color: $gray;
+    }
+    ul{
+      &.social-media{
+        @media only screen and (max-width: $phablet)  {
+          margin-bottom: 80px;
+        }
+        li{
+          float: left;
+          margin-right: 16px;
+          a {
+            width: 33px;
+            height: 33px;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .youtube{
+            background: #FF0000;
+          }
+          .instagram{
+            background: #C13584;
+          }
+          .twitter{
+            background: #1DA1F2;
+          }
+          .facebook{
+            background: #3B5998;
+          }
+        }
+
+      }
+      li{
+        margin-bottom: 8px;
+        a.t-link{
+          font-family: $font-primary;
+          font-size: toRem(15);
+          line-height: 23px;
+          letter-spacing: -0.01em;
+          color: $gray;
+          &:hover{
+            text-decoration: underline !important;
+          }
+        }
+      }
+    }
+  }
+
+  &-logos{
+    mix-blend-mode: multiply;
+    @media only screen and (max-width: $phablet)  {
+      margin-bottom: 80px;
+    }
+  }
+  &-mobile-menu{
+    position: fixed;
+    bottom: 0;
+    background-color: #FAFAFA;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    a{
+      padding: 12px 0 9px 0;
+      em{
+        color: $lightGray ;
+        display: block;
+        text-align: center;
+      }
+      span{
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: toRem(12);
+        line-height: toRem(23);
+        letter-spacing: -0.01em;
+        color: $lightGray;
+        display: block;
+      }
+      &.selected{
+        span{
+          color: $primary_color;
+        }
+      }
+    }
+  }
+}

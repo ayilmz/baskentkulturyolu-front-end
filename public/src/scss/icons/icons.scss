@@ -1,0 +1,219 @@
+@font-face {
+	font-family: "icon-fonts";
+	src: url('../fonts/web-icons/icon-fonts.eot');
+	src: url('../fonts/web-icons/icon-fonts.eot?#iefix') format('eot'),
+		url('../fonts/web-icons/icon-fonts.woff2') format('woff2'),
+		url('../fonts/web-icons/icon-fonts.woff') format('woff'),
+		url('../fonts/web-icons/icon-fonts.ttf') format('truetype'),
+		url('../fonts/web-icons/icon-fonts.svg#icon-fonts') format('svg');
+		font-display: swap;
+}
+
+.icon:before {
+	font-family: "icon-fonts";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+	speak: never;
+	text-transform: none;
+}
+
+
+.icon-calendar:before {
+	content: "\E001";
+}
+
+.icon-check:before {
+	content: "\E002";
+}
+
+.icon-close:before {
+	content: "\E003";
+}
+
+.icon-concert:before {
+	content: "\E004";
+}
+
+.icon-dance:before {
+	content: "\E005";
+}
+
+.icon-events:before {
+	content: "\E006";
+}
+
+.icon-exhibit:before {
+	content: "\E007";
+}
+
+.icon-facebook:before {
+	content: "\E008";
+}
+
+.icon-favorite-selected:before {
+	content: "\E009";
+}
+
+.icon-favorite:before {
+	content: "\E00A";
+}
+
+.icon-google-maps-maker:before {
+	content: "\E00B";
+}
+
+.icon-hamburger-menu:before {
+	content: "\E00C";
+}
+
+.icon-information:before {
+	content: "\E00D";
+}
+
+.icon-instagram:before {
+	content: "\E00E";
+}
+
+.icon-interview:before {
+	content: "\E00F";
+}
+
+.icon-login-exit:before {
+	content: "\E010";
+}
+
+.icon-next:before {
+	content: "\E011";
+}
+
+.icon-opera:before {
+	content: "\E012";
+}
+
+.icon-people:before {
+	content: "\E013";
+}
+
+.icon-performance:before {
+	content: "\E014";
+}
+
+.icon-phone:before {
+	content: "\E015";
+}
+
+.icon-place:before {
+	content: "\E016";
+}
+
+.icon-prev:before {
+	content: "\E017";
+}
+
+.icon-road-map:before {
+	content: "\E018";
+}
+
+.icon-search:before {
+	content: "\E019";
+}
+
+.icon-select-down:before {
+	content: "\E01A";
+}
+
+.icon-select-up:before {
+	content: "\E01B";
+}
+
+.icon-share:before {
+	content: "\E01C";
+}
+
+.icon-theatre:before {
+	content: "\E01D";
+}
+
+.icon-ticket:before {
+	content: "\E01E";
+}
+
+.icon-twitter:before {
+	content: "\E01F";
+}
+
+.icon-youtube:before {
+	content: "\E020";
+}
+
+
+
+$icon-calendar:"\E001";
+
+$icon-check:"\E002";
+
+$icon-close:"\E003";
+
+$icon-concert:"\E004";
+
+$icon-dance:"\E005";
+
+$icon-events:"\E006";
+
+$icon-exhibit:"\E007";
+
+$icon-facebook:"\E008";
+
+$icon-favorite-selected:"\E009";
+
+$icon-favorite:"\E00A";
+
+$icon-google-maps-maker:"\E00B";
+
+$icon-hamburger-menu:"\E00C";
+
+$icon-information:"\E00D";
+
+$icon-instagram:"\E00E";
+
+$icon-interview:"\E00F";
+
+$icon-login-exit:"\E010";
+
+$icon-next:"\E011";
+
+$icon-opera:"\E012";
+
+$icon-people:"\E013";
+
+$icon-performance:"\E014";
+
+$icon-phone:"\E015";
+
+$icon-place:"\E016";
+
+$icon-prev:"\E017";
+
+$icon-road-map:"\E018";
+
+$icon-search:"\E019";
+
+$icon-select-down:"\E01A";
+
+$icon-select-up:"\E01B";
+
+$icon-share:"\E01C";
+
+$icon-theatre:"\E01D";
+
+$icon-ticket:"\E01E";
+
+$icon-twitter:"\E01F";
+
+$icon-youtube:"\E020";

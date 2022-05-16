@@ -1,0 +1,32 @@
+.sponsorship{
+  margin-top: 95px;
+  margin-bottom: 110px;
+  &-slider{
+    @media only screen and (max-width: $phablet)  {
+      width: auto;
+    }
+    ul{
+      @media only screen and (max-width: $phablet)  {
+        overflow: scroll;
+      }
+    }
+  }
+  &-title{
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: toRem(36);
+    line-height: 46px;
+    letter-spacing: -0.06em;
+    color: $black;
+    margin-bottom: 75px;
+  }
+  &-slider{
+    li{
+      img{
+        @media only screen and (max-width: $phablet)  {
+          width: 142px;
+        }
+      }
+    }
+  }
+}

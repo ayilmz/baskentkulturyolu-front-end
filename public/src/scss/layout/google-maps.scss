@@ -1,0 +1,24 @@
+#google-map{
+  background-color:#c0e8e8;
+  height: 100vh;
+  @media only screen and (max-width: $phablet)  {
+    height: 40vh;
+  }
+}
+
+.next-page-with-map{
+  .footer{
+    padding: 30px 15px;
+    .links-1, .links-2{
+      min-width: 25% !important;
+    }
+    .social-media-links{
+      min-width: 50% !important;
+    }
+    .tga-logo{
+      min-width: 100% !important;
+      justify-content: center !important;
+      margin-top: 20px;
+    }
+  }
+}

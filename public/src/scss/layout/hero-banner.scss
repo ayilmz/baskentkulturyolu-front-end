@@ -1,0 +1,111 @@
+.hero-banner{
+  padding: 20px 0;
+  @media only screen and (max-width: $phablet) {
+    height: 300px;
+  }
+  .swiper{
+    @media only screen and (max-width: $phablet) {
+      padding: 0 15px;
+    }
+  }
+
+  &-image{
+    img{
+      @media only screen and (max-width: $phablet) {
+        width: 100%;
+      }
+    }
+  }
+  &-html{
+    img{
+      margin-right: 24px;
+      border-radius: 0px 0px 32px 0px;
+      @media only screen and (max-width: $phablet) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    div{
+      @media only screen and (max-width: $phablet) {
+        position: absolute;
+        transform: scale(0.5);
+        left: -80px;
+        top: -80px;
+      }
+    }
+    p{
+      &.date{
+        font-family: $font_primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 62px;
+        letter-spacing: 0.08em;
+        color: #FFFFFF;
+      }
+      &.title{
+        font-family: $font_secondary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: toRem(64);
+        line-height: toRem(62);
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+        width: 385px;
+      }
+      &.place{
+        font-family: $font_primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 62px;
+        letter-spacing: 0.36em;
+        color: #FFFFFF;
+      }
+    }
+    button{
+      border: 2px solid #FFFFFF;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 16px 32px rgba(62, 62, 61, 0.16));
+      border-radius: 24px;
+      background-color: transparent;
+      padding: 12px 56px;
+      color: #FFFFFF;
+      span{
+        margin-right: 18px;
+        font-family: $font_primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        letter-spacing: -0.01em;
+        font-feature-settings: 'liga' off;
+      }
+    }
+  }
+
+  .slider-nav{
+    position: absolute;
+    margin: 0 44px;
+    z-index: 3;
+    color: #FFFFFF;
+    border: 2px solid white;
+    top: 250px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @media only screen and (max-width: $phablet) {
+      display: none;
+    }
+    &.hero-banner-swiper-button-prev{
+      left: 0;
+    }
+    &.hero-banner-swiper-button-next{
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+/*
+* Color global variable
+*/
+$black 						: #252525;
+$white						: #fff;
+$primary_color              : #E10098;
+$gray                       : #3E3E3D;
+$lightGray                  : #656564;
+
+
+/*Reset.scss'teki a color */
+$default_link_color: #759cb1;
+
+
+@font-face {
+  font-family: Majorant;
+  src: url("../fonts/Majorant-Rg.ttf");
+}
+
+@font-face {
+  font-family: Majorant_Bold;
+  src: url("../fonts/Majorant-Bd.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Slab:wght@400;700&display=swap');
+
+/*Reset.scss'teki Input font*/
+$input_font: 'Arial', sans-serif;
+$font_primary: Majorant, sans-serif;
+$font_primary_bold: Majorant_Bold, sans-serif;
+$font_secondary: 'Poppins', sans-serif;
+
+
+/*
+* 	Font size global variable
+*/
+$font_size_xxl		: 48px;
+$font_size_xl		: 36px;
+$font_size_l 		: 24px;
+$font_size_m 		: 18px; 
+$font_size_s 		: 16px;
+$font_size_xs 		: 12px;
+
+/*
+* Media query size variable
+*/
+$small_desktop	: 1024px;
+$tablet			: 992px;
+$phablet		: 768px;
+$mobile			: 480px;
+
+/*
+* Animate delay
+*/
+$animation_speed: .5s;
+$animation_easing: ease;
+
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+.d-flex-align-center-justify-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-padding-mobile {
+  @media only screen and (max-width: $phablet)  {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.content-scroll{
+  @media only screen and (min-width: $phablet)  {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 30px !important;
+  }
+  @media only screen and (max-width: $phablet)  {
+    padding: 0 !important;
+  }
+}

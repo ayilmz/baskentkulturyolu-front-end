@@ -1,0 +1,43 @@
+- var prefix = "./_assets"
+<!DOCTYPE html>
+html
+    head
+        block head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=5, user-scalable=yes")
+        link(href=prefix + "/css/style.min.css", as="style", rel="stylesheet preload", asp-append-version="true")
+
+        link(rel="apple-touch-icon", sizes="57x57", href="/apple-icon-57x57.png")
+        link(rel="apple-touch-icon", sizes="60x60", href="/apple-icon-60x60.png")
+        link(rel="apple-touch-icon", sizes="72x72", href="/apple-icon-72x72.png")
+        link(rel="apple-touch-icon", sizes="114x114", href="/apple-icon-114x114.png")
+        link(rel="apple-touch-icon", sizes="120x120", href="/apple-icon-120x120.png")
+        link(rel="apple-touch-icon", sizes="144x144", href="/apple-icon-144x144.png")
+        link(rel="apple-touch-icon", sizes="152x152", href="/apple-icon-152x152.png")
+        link(rel="apple-touch-icon", sizes="180x180", href="/apple-icon-180x180.png")
+        link(rel="icon", type="image/png", sizes="192x192", href="/android-icon-192x192.png")
+        link(rel="icon", type="image/png", sizes="32x32", href="/android-icon-32x32.png")
+        link(rel="icon", type="image/png", sizes="96x96", href="/android-icon-96x96.png")
+        link(rel="icon", type="image/png", sizes="16x16", href="/android-icon-16x16.png")
+        meta(name="msapplication-TileColor", content="#ffffff")
+        meta(name="msapplication-TileImage", content="/ms-icon-144x144.png")
+        meta(name="theme-color", content="#ffffff")
+        title Ankara Kültür Yolu
+        meta(name="description", content="Ankara Kültür Yolu")
+        meta(name="keywords", content="Ankara Kültür Yolu")
+        meta(property="og:title" content="")
+        meta(property="og:image" content="")
+        meta(name="robots", content="noindex")
+
+
+    body
+        block content
+
+        script(type="text/javascript", src="https://polyfill.io/v3/polyfill.min.js?features=default")
+        script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjpW0BTMvswM4wWfONKoe6njDH1M2uKDg")
+        script(type="text/javascript", src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+        script(type="text/javascript", src=prefix + "/js/scripts.min.js")
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        block scripts
+

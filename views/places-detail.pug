@@ -1,0 +1,47 @@
+extends layout/layout
+
+block content
+    div.container-header.event-page.d-none.d-md-block
+        include layout/header
+    div.main.container-fluid.no-gutters.p-0.next-page-with-map
+        div.row.no-gutters
+            div.col-lg-7.d-none.d-md-block
+                div#google-map
+            div.col-lg-5.place-and-event-detail-container
+                div.col-12.place-navigation.justify-content-between.d-flex.content-scroll-header
+                    a(href="#", title="Mekanlara Dön")
+                        em.icon.icon-prev
+                        span Mekanlara Dön
+                    div
+                        a(href="#", title="Paylaş")
+                            em.icon.icon-share
+                        button.add-favorite
+                            em.icon.icon-favorite
+                div.col-12.content-scroll
+                    div.col-12.d-block.d-md-flex
+                        img.img(src=prefix + "/images/place-logo.png", width="135", height="57")
+                        div.place-detail-information
+                            span.place-detail-information-name ODTÜ Kültür ve Kongre Merkezi
+                            span.place-detail-information-address Kültür ve Kongre Merkezi, ODTÜ, 06800 Çankaya/Ankara
+                            span.place-detail-information-phone +90 312 200 00 00
+                    div.col-12.place-detail-contact.d-flex.justify-content-between
+                        div.col-5.place-detail-contact-call.text-center
+                            a(href="#")
+                                em.icon.icon-phone
+                                span Ara
+                        div.col-1.d-block.d-md-none
+                        div.col-6.place-detail-contact-road.text-center
+                            a(href="#")
+                                em.icon.icon-road-map
+                                span Yol Tarifi
+
+                    div.col-12.place-labels
+                        p Etiketler
+                        a(href="#", title="Sergi") Sergi
+                        a(href="#", title="Çocuk") Çocuk
+                    div.col-12.place-event-list
+                        p.place-event-list-title Etkinlikler
+                            span (2)
+                        div.all-activities-flow
+                            include layout/all-activities-flow
+                    include layout/footer

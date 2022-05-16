@@ -1,0 +1,268 @@
+extends layout/layout
+
+block content
+    div.container-header.homepage
+        include layout/header
+        div.container-fluid.hero-banner.d-flex.justify-content-center
+            div.swiper.hero-banner-swiper
+                div.swiper-wrapper
+                    div.swiper-slide.hero-banner-image
+                        a.d-flex.justify-content-center(href='#')
+                            img.img(src=prefix + "/images/heroImage.png")
+                    div.swiper-slide.hero-banner-html
+                        a.d-flex.justify-content-center(href='#')
+                            img.img(src=prefix + "/images/heroImage-html.jpeg")
+                            div
+                                p.date 17.03.2022
+                                p.title Rüyaların Dansı
+                                p.place CSO ADA ANKARA - TARİHİ SALON
+                                button
+                                    span Detaylı Bilgi
+                                    em.icon.icon-next
+                div.swiper-pagination
+                div.slider-nav.hero-banner-swiper-button-prev
+                    em.icon.icon-prev
+                div.slider-nav.hero-banner-swiper-button-next
+                    em.icon.icon-next
+    div.main
+        div.what-you-want.d-none.d-md-block
+            div.container
+                div.row.d-flex.justify-content-center
+                    div.col-6
+                        p Ne yapmak istediğinizden emin değil misiniz? Harika!
+                    div.col-6.text-right
+                        a(href="#") Her Öneriye Açığım
+        div.categories.d-none.d-md-block
+            div.container
+                div.row
+                    div.col-lg-12
+                        p.categories-title Kategoriler
+                        div.swiper.categories-swiper
+                            div.swiper-wrapper
+                                div.swiper-slide.category-item
+                                    a(href="#")
+                                        img.img(src=prefix + "/icons/exhibit.svg", height='28')
+                                        span Sergiler
+                                div.swiper-slide.category-item
+                                    a(href="#")
+                                        img.img(src=prefix + "/icons/theatre.svg", height='28')
+                                        span Tiyatrolar
+                                div.swiper-slide.category-item
+                                    a(href="#")
+                                        img.img(src=prefix + "/icons/concert.svg", height='28')
+                                        span Konserler
+                                div.swiper-slide.category-item
+                                    a(href="#")
+                                        img.img(src=prefix + "/icons/performance.svg", height='28')
+                                        span Performanslar
+                                div.swiper-slide.category-item
+                                    a(href="#")
+                                        img.img(src=prefix + "/icons/interview.svg", height='28')
+                                        span Söyleşi
+                                div.swiper-slide.category-item
+                                    a(href="#")
+                                        img.img(src=prefix + "/icons/opera.svg", height='28')
+                                        span Opera
+                                div.swiper-slide.category-item
+                                    a(href="#")
+                                        img.img(src=prefix + "/icons/dance.svg", height='28')
+                                        span Dans
+                            div.slider-nav.categories-swiper-button-prev
+                                em.icon.icon-prev
+                            div.slider-nav.categories-swiper-button-next
+                                em.icon.icon-next
+        div.all-activities
+            div.container
+                div.row
+                    div.col-12
+                        ul.all-activities-tabs.d-flex
+                            li
+                                button(data-id="today-activities").active Bugün
+                            li
+                                button(data-id="popular-activities") Popüler
+                            li
+                                button(data-id="free-activities") Ücretsiz
+                    div.col-12
+                        div.today-activities.all-activities-flow
+                            include layout/all-activities-flow
+                        div.popular-activities.all-activities-flow.d-none
+                            div.all-activities-flow-item
+                                button.activity-favorite
+                                    em.icon.icon-favorite-selected
+                                div.row
+                                    a(href="#", title="Nil Karaibrahimgil ile Her Çocuk Bir Evren", class="d-flex d-md-block")
+                                        div.col-7.col-lg-12
+                                            p.activity-time 10:30 - 12:30
+                                            p.activity-title Nil Karaibrahimgil ile Her Çocuk Bir Evren
+                                            p.activity-place ODTU Kültür ve Kongre Merkezi
+                                        div.col-5.col-lg-12.d-flex.align-content-center.flex-wrap
+                                            img.img(src=prefix + "/images/flow-image-vertical.png", width='226', height='316')
+                            div.all-activities-flow-item
+                                button.activity-favorite
+                                    em.icon.icon-favorite
+                                div.row
+                                    a(href="#", title="Nil Karaibrahimgil ile Her Çocuk Bir Evren", class="d-flex d-md-block")
+                                        div.col-7.col-lg-12
+                                            p.activity-time 10:30 - 12:30
+                                            p.activity-title Nil Karaibrahimgil ile Her Çocuk Bir Evren
+                                            p.activity-place ODTU Kültür ve Kongre Merkezi
+                                        div.col-5.col-lg-12.d-flex.align-content-center.flex-wrap
+                                            img.img(src=prefix + "/images/flow-image-horizontal.png", width='268', height='105')
+                            div.all-activities-flow-item
+                                button.activity-favorite
+                                    em.icon.icon-favorite
+                                div.row
+                                    a(href="#", title="Nil Karaibrahimgil ile Her Çocuk Bir Evren", class="d-flex d-md-block")
+                                        div.col-7.col-lg-12
+                                            p.activity-time 10:30 - 12:30
+                                            p.activity-title Nil Karaibrahimgil ile Her Çocuk Bir Evren
+                                            p.activity-place ODTU Kültür ve Kongre Merkezi
+                                        div.col-5.col-lg-12.d-flex.align-content-center.flex-wrap
+                                            img.img(src=prefix + "/images/flow-image-vertical.png", width='226', height='316')
+                            div.all-activities-flow-item
+                                button.activity-favorite
+                                    em.icon.icon-favorite
+                                div.row
+                                    a(href="#", title="Nil Karaibrahimgil ile Her Çocuk Bir Evren", class="d-flex d-md-block")
+                                        div.col-7.col-lg-12
+                                            p.activity-time 10:30 - 12:30
+                                            p.activity-title Nil Karaibrahimgil ile Her Çocuk Bir Evren
+                                            p.activity-place ODTU Kültür ve Kongre Merkezi
+                                        div.col-5.col-lg-12.d-flex.align-content-center.flex-wrap
+                                            img.img(src=prefix + "/images/flow-image-horizontal.png", width='268', height='105')
+
+
+
+
+                            div.all-activities-flow-item
+                                button.activity-favorite
+                                    em.icon.icon-favorite
+                                div.row
+                                    a(href="#", title="Nil Karaibrahimgil ile Her Çocuk Bir Evren", class="d-flex d-md-block")
+                                        div.col-7.col-lg-12
+                                            p.activity-time 10:30 - 12:30
+                                            p.activity-title Nil Karaibrahimgil ile Her Çocuk Bir Evren
+                                            p.activity-place ODTU Kültür ve Kongre Merkezi
+                                        div.col-5.col-lg-12.d-flex.align-content-center.flex-wrap
+                                            img.img(src=prefix + "/images/flow-image-vertical.png", width='226', height='316')
+                            div.all-activities-flow-item
+                                button.activity-favorite
+                                    em.icon.icon-favorite-selected
+                                div.row
+                                    a(href="#", title="Nil Karaibrahimgil ile Her Çocuk Bir Evren", class="d-flex d-md-block")
+                                        div.col-7.col-lg-12
+                                            p.activity-time 10:30 - 12:30
+                                            p.activity-title Nil Karaibrahimgil ile Her Çocuk Bir Evren
+                                            p.activity-place ODTU Kültür ve Kongre Merkezi
+                                        div.col-5.col-lg-12.d-flex.align-content-center.flex-wrap
+                                            img.img(src=prefix + "/images/flow-image-horizontal.png", width='268', height='105')
+
+                            div.all-activities-flow-item
+                                button.activity-favorite
+                                    em.icon.icon-favorite
+                                div.row
+                                    a(href="#", title="Nil Karaibrahimgil ile Her Çocuk Bir Evren", class="d-flex d-md-block")
+                                        div.col-7.col-lg-12
+                                            p.activity-time 10:30 - 12:30
+                                            p.activity-title Nil Karaibrahimgil ile Her Çocuk Bir Evren
+                                            p.activity-place ODTU Kültür ve Kongre Merkezi
+                                        div.col-5.col-lg-12.d-flex.align-content-center.flex-wrap
+                                            img.img(src=prefix + "/images/flow-image-horizontal.png", width='268', height='105')
+
+                div.row.d-flex.justify-content-center.align-items-center
+                    button.all-activities-show-more.d-flex.justify-content-center.align-items-center
+                        img.img(src=prefix + "/images/plus.svg", width='17', height='17')
+                        span Daha fazla göster
+        div.container-instagram
+            div.container
+                div.row
+                    div.col-md-6.col-lg-4.instagram-information.d-flex
+                        img.img(src=prefix + "/images/instagram-avatar.png", width='54', height='54')
+                        p
+                            span.instagram-information-title @BaskentKulturYolu
+                            span.instagram-information-counts <b>240 Post</b> 381K Takipçi
+
+                    div.col-md-3.col-lg-4.instagram-information.d-flex.justify-content-center.justify-content-md-start
+                        a(href="#", class="d-flex justify-content-center align-items-center") Takip Et
+                    div.col-md-3.col-lg-4.d-none.d-md-flex.justify-content-center.justify-content-md-start
+                        button.slider-nav.instagram-slider-prev-button
+                            em.icon.icon-prev
+                        button.slider-nav.instagram-slider-next-button
+                            em.icon.icon-next
+        div.container-fluid
+            div.row.instagram-flow
+                div.col.swiper.mySwiper
+                    div.instagram-flow-slider.swiper-wrapper
+                        div.slider.swiper-slide
+                            div.instagram-flow-slider-item
+                                img.instagram-flow-image(src=prefix + "/images/instagram-image-1.png", width='300', height='263')
+                                div.instagram-flow-account-name
+                                    img.img(src=prefix + "/images/instagram-avatar.png", width='32', height='32')
+                                    span @BaskentKulturYolu
+                                p How We Keep Brand Consistency in Our Visual Language — A Design System for Illustrations
+
+                        div.slider.swiper-slide
+                            div.instagram-flow-slider-item
+                                img.instagram-flow-image(src=prefix + "/images/instagram-image-2.png", width='300', height='263')
+                                div.instagram-flow-account-name
+                                    img.img(src=prefix + "/images/instagram-avatar.png", width='32', height='32')
+                                    span @BaskentKulturYolu
+                                p Mental models for designers
+
+                        div.slider.swiper-slide
+                            div.instagram-flow-slider-item
+                                img.instagram-flow-image(src=prefix + "/images/instagram-image-3.png", width='300', height='263')
+                                div.instagram-flow-account-name
+                                    img.img(src=prefix + "/images/instagram-avatar.png", width='32', height='32')
+                                    span @BaskentKulturYolu
+                                p How We Keep Brand Consistency in Our Visual Language — A Design System for Illustrations
+
+                        div.slider.swiper-slide
+                            div.instagram-flow-slider-item
+                                img.instagram-flow-image(src=prefix + "/images/instagram-image-4.png", width='300', height='263')
+                                div.instagram-flow-account-name
+                                    img.img(src=prefix + "/images/instagram-avatar.png", width='32', height='32')
+                                    span @BaskentKulturYolu
+                                p How We Keep Brand Consistency in Our Visual Language — A Design System for Illustrations
+
+
+        div.mobile-application-support
+            div.container
+                div.row.justify-content-md-center
+                    div.col-12.col-md-4.align-self-center
+                        p.mobile-application-support-title Başken Kültür Yolu
+                        p.mobile-application-support-sub-title Mobil Uygulaması
+                        p.mobile-application-support-description How We Keep Brand Consistency in Our Visual Language — A Design System for Illustrations
+                    div.col-6.col-md-auto
+                        img.img(src=prefix + "/images/mobile-application.png", width='200', height='361')
+                    div.col-6.col-md-4.align-self-center
+                        ul.justify-content-md-center.mobile-application-support-images
+                            li.float-left
+                                a(href="#")
+                                    img.img(src=prefix + "/images/google-play.png", width='135', height='40')
+                            li.float-left
+                                a(href="#")
+                                    img.img(src=prefix + "/images/app-store.png", width='135', height='40')
+
+        div.sponsorship
+            div.container
+                div.row
+                    div.col
+                        p.sponsorship-title Sponsorlar
+                div.row.sponsorship-slider
+                    div.col
+                        ul.d-flex.justify-content-between
+                            li
+                                img.img(src=prefix + "/images/sponsor-eczacibasi.png", title="Eczacıbaşı")
+                            li
+                                img.img(src=prefix + "/images/sponsor-vitra.png", title="Vitra")
+                            li
+                                img.img(src=prefix + "/images/sponsor-basf.png", title="Basf")
+                            li
+                                img.img(src=prefix + "/images/sponsor-zorlu.png", title="Zorlu")
+
+
+    include layout/footer
+
+
+

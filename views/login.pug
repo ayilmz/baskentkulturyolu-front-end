@@ -1,0 +1,31 @@
+extends layout/layout
+
+block content
+    div.container-fluid.no-gutters.login-register.p-0
+        div.row.no-gutters
+            div.col-lg-7.d-flex.align-content-center.flex-wrap.justify-content-center.min-vh-100
+                div.login-container.text-center
+                    img.img(src=prefix + "/images/login-image.svg", width='348', height='77')
+                    div.login-window.text-left
+                        p.login-window-title Giriş Yap / Üye Ol
+                        p.login-window-subtitle Devam etmek için lütfen telefon numaranızı girin.
+
+                        form.login-form(data-parsley-validate="")
+                            div.login-form-item
+                                p.login-window-input-title Telefon Numaranız
+                                div.d-lg-flex.align-content-center.flex-wrap.justify-content-start.text-left
+                                    <select name="country-code" id="country-code">
+                                        <option value="volvo">+90</option>
+                                        <option value="saab">+1</option>
+                                    </select>
+                                    input(placeholder="555 555 55 55", id="phone-number", name="phone-number", required="", data-parsley-required-message="Lütfen bu alanı boş bırakmayınız")
+
+                            label.mt-3(for="registerBtn")
+                                span Giriş Yap
+                                em.icon.icon-next
+                            input#registerBtn(type="submit", class="d-none", value="Giriş Yap")
+
+            div.col-lg-5.logo-area.d-none.d-lg-flex.align-content-center.flex-wrap.justify-content-center.vh-100
+                img.img(src=prefix + "/images/kultur-turizm-bakanligi.png", width='223', height='146', class="mr-5")
+                img.img(src=prefix + "/images/baskent-kultur-yolu.svg", width='163', height='102', class="mt-4")
+

@@ -1,0 +1,33 @@
+@import "header";
+
+@import "categories";
+
+@import "all-activities";
+
+@import "instagram";
+
+@import "mobile-application";
+
+@import "sponsorship";
+
+@import "footer";
+
+@import "google-maps";
+
+@import "events-places";
+
+@import "place-and-event-detail";
+
+@import "login";
+
+#main {
+  margin-bottom: 200px;
+}
+a {
+  text-decoration: none !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}

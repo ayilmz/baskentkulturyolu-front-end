@@ -1,0 +1,43 @@
+.mobile-application-support{
+  &-title {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: toRem(26);
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    color: $black;
+    margin-bottom: 8px;
+  }
+
+  &-sub-title{
+    font-family: $font_secondary;
+    font-weight: 700;
+    font-size: toRem(36);
+    line-height: 46px;
+    letter-spacing: -0.06em;
+    color: $black;
+    margin-bottom: 24px;
+    @media only screen and (max-width: $phablet)  {
+      margin-bottom: 8px;
+    }
+  }
+
+  &-description{
+    font-family: $font-primary;
+    font-size: toRem(17);
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'liga' off;
+    color: $lightGray;
+  }
+
+  &-images{
+    li{
+      margin-right: 32px;
+      @media only screen and (max-width: $phablet)  {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
